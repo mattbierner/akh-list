@@ -2,14 +2,13 @@
 const assert = require('chai').assert
 const List = require('../index').List
 const base = require('akh.core')
-console.log(List);
+
 describe('List', () => {
     it("simple_of", () => {
         const c = List.of(3)
 
-        assert.deepEqual(
-            List.run(c),
-            [3])
+        assert.deepEqual([3], List.run(c))
+        assert.deepEqual([3], c.run())
     })
 
     it("of_array", () => {

@@ -17,4 +17,8 @@ const List = ListT(Identity)
  */
 List.run = m => Identity.run(ListT.run(m))
 
+List.prototype.run = function() {
+    return List.run(this)
+}
+
 module.exports = List

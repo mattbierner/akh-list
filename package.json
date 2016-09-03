@@ -1,7 +1,7 @@
 {
   "name": "akh.list",
-  "version": "0.0.0",
-  "description": "Akh list monad",
+  "version": "0.0.1",
+  "description": "Akh list monad and monad transformer",
   "author": "Matt Bierner",
   "license": "MIT",
   "keywords": [
